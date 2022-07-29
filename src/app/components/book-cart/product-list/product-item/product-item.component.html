@@ -1,0 +1,26 @@
+<div class="card shadow-sm mt-3 card-style">
+  <div class="img-container">
+    <img class="bd-placeholder-img card-img-top img-height p-4" width="100%" [src]="imageLink">
+  </div>
+
+  <div class="card-body card-body-style d-flex flex-column justify-content-between">
+    
+      <div class="d-flex flex-column justify-content-start">
+        <p class="card-text fw-bolder mb-1 fs-5 text-capitalize lh-sm">{{ product.title }}</p>
+        <p class="card-text fw-light text-capitalize category-style">{{ product.category }}</p>
+      </div>
+
+      <div class="d-flex flex-column justify-content-end">
+        <div class="d-flex flex-column justify-content-end">
+          <p class="card-text mb-0 fw-light lh-md">Em estoque: <span class="fw-normal">{{ product.stock }}</span> </p>
+          <p class="card-text lh-sm mb-3">{{ product.price | currency:'BRL' }}</p>
+        </div>
+      
+        <div class="d-flex justify-content-between align-items-center">
+          <button type="button" class="btn btn-sm m-0 rounded btn-outline-light btn-details lh-md">Detalhes</button>
+          <button type="button" class="btn btn-sm m-0 rounded btn-primary btn-buy lh-md">Comprar</button>
+        </div>
+      </div>
+      
+  </div>
+</div>

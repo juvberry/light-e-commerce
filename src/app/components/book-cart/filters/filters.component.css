@@ -1,0 +1,15 @@
+.card-header-style{
+    background-color: aliceblue;
+}
+
+.btn-filter{
+    color: #638AFF;
+    background-color:aliceblue;
+    width: 100%;
+    border-color: #638AFF;
+}
+
+.btn-primary:hover{
+    background-color: #638AFF;
+    color: white;
+}
